@@ -1,0 +1,143 @@
+body,
+html {
+  margin: 0;
+  background-color: #f5f7f9;
+}
+
+/* header */
+.hero {
+  background-color: #ffbf69;
+  margin-bottom: 10px;
+}
+
+.headerLink {
+  color: #69585f;
+}
+
+.headerLink:hover {
+  color: #ff686b;
+}
+
+.headerTitle {
+  height: 100%;
+  flex-grow: 0;
+  display: inline-block;
+}
+
+.headerLinks {
+  height: 100%;
+  flex-grow: 1000;
+  right: 0;
+  display: inline-block;
+}
+
+.nav-list {
+  margin: 1em 0 0.5em;
+  text-align: right;
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-list a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
+
+/* main container */
+.contentCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* div cards */
+.snapshot {
+  display: flex;
+  width: 30%;
+  margin: 5px;
+}
+
+/* cards */
+.snapshotCard {
+  border-radius: 7px;
+  border: 0.5px solid #f0f4f6;
+}
+
+/* delete btn */
+.deleteSnapshot {
+  position: absolute;
+  top: -10px;
+  right: -6px;
+
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 0px;
+  background-color: #ff686b;
+  color: #303030;
+}
+
+.deleteSnapshot:hover {
+  background-color: #ffbf69;
+  color: #303030;
+}
+
+.snapshotLegend {
+  position: relative;
+  padding: 10px !important;
+  text-align: center;
+}
+
+/* footer details */
+.footerCard {
+  font-size: 14px;
+}
+
+/* comments div */
+.contentComments {
+  background-color: #c9ada7 !important;
+  margin: 5px;
+  position: relative;
+}
+
+/* empty message default */
+.isEmptyMessage {
+  background-color: #ffe5d9 !important;
+  margin: auto;
+}
+
+.isEmptyMessage a {
+  color: #ff686b !important;
+}
+
+.isEmptyMessage a:hover {
+  color: #f0f4f6 !important;
+}
+
+/* footer */
+.renderFooter {
+  margin-top: 10px;
+}
+
+/* hidden */
+#helpMsg,
+#deleteAccountDiv,
+#hiddenUsername,
+#hiddenPassword,
+#toggleNotificationsDiv,
+#hiddenEmail {
+  display: none;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+@media (max-width: 760px) {
+  .snapshot {
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    justify-content: center;
+  }
+}

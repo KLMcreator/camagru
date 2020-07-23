@@ -1,0 +1,141 @@
+body,
+html {
+  margin: 0;
+  background-color: #f5f7f9;
+  height: 100%;
+  width: 100%;
+}
+
+/* header */
+.hero {
+  background-color: #e9c46a;
+  margin-bottom: 10px;
+}
+
+.headerLink {
+  color: #9d8189;
+}
+
+.headerLink:hover {
+  color: #ff686b;
+}
+
+.headerTitle {
+  height: 100%;
+  flex-grow: 0;
+  display: inline-block;
+}
+
+.headerLinks {
+  height: 100%;
+  flex-grow: 1000;
+  right: 0;
+  display: inline-block;
+}
+
+.nav-list {
+  margin: 1em 0 0.5em;
+  text-align: right;
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-list a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
+
+/* render container */
+.renderContainer {
+  display: flex;
+}
+
+/* Controls */
+.controlButtons {
+  text-align: center;
+  margin: 5px;
+}
+
+/* Snapshot */
+.snapshotColumn {
+  padding: 5px;
+  flex: 2 0 0;
+  background-color: #edf2f4;
+  border: 1px solid #e5e5e6;
+  border-radius: 7px;
+}
+
+.snapshot {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #9d8189;
+  display: block;
+}
+
+/* Comments */
+.commentColumn {
+  flex: 1 0 0;
+  position: relative;
+  border: 1px solid #e5e5e6;
+  background-color: #edf2f4;
+  border-radius: 7px;
+  margin-left: 5px;
+}
+
+.commentTitle {
+  font-size: 14px;
+  border-bottom: 1px solid #9d8189;
+  color: #7a7b7b;
+}
+
+.contentHasDelete {
+  position: relative;
+}
+
+/* delete btn */
+.deleteSnapshot {
+  position: absolute;
+  top: -10px;
+  right: -6px;
+
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 0px;
+  background-color: #ff686b;
+  color: #303030;
+}
+
+.commentContent {
+  font-size: 13px;
+  color: #69585f;
+}
+
+.commentSection {
+  padding: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  min-height: 320px;
+}
+
+.newComment {
+  margin: 5px;
+}
+
+/* footer */
+.renderFooter {
+  margin-top: 10px;
+}
+
+@media (max-width: 760px) {
+  .renderContainer {
+    display: block;
+  }
+}

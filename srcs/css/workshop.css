@@ -1,0 +1,273 @@
+body,
+html {
+  margin: 0;
+  background-color: #f5f7f9;
+  width: 100%;
+}
+
+/* Gallery column */
+.galleryColumn {
+  flex: 1 0 0;
+  position: relative;
+  border: 1px solid #e5e5e6;
+  background-color: #f2e9e4;
+  border-radius: 7px;
+  margin-left: 5px;
+}
+
+.scrollableGallery {
+  padding: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  min-height: 320px;
+}
+
+/* Gallery cards*/
+.snapshot {
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+}
+
+.snapshotCard {
+  border-radius: 7px;
+  border: 1px solid #c9ada7;
+}
+
+.footerCard {
+  font-size: 10px;
+}
+
+.snapshotLegend {
+  position: relative;
+  padding: 10px !important;
+  text-align: center;
+}
+
+/* Header  */
+.hero {
+  background-color: #f2e9e4;
+  margin-bottom: 10px;
+}
+
+.headerLink {
+  color: #69585f;
+}
+
+.headerLink:hover {
+  color: #ff686b;
+}
+
+.headerTitle {
+  height: 100%;
+  flex-grow: 0;
+  display: inline-block;
+}
+
+.headerLinks {
+  height: 100%;
+  flex-grow: 1000;
+  right: 0;
+  display: inline-block;
+}
+
+.nav-list {
+  margin: 1em 0 0.5em;
+  text-align: right;
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-list a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
+
+/* Filter slider */
+.menu-wrapper {
+  position: relative;
+  height: 150px;
+  margin: 1em auto;
+  border: 1px solid #c9ada7;
+  border-radius: 7px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.scrollingMenu {
+  height: 150px;
+  background: #f3f3f3;
+  box-sizing: border-box;
+
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrollingMenuItem {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  outline: 1px solid #ffcad4;
+}
+
+.filter {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.paddle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3em;
+  color: #ffcad4;
+}
+
+.left-paddle {
+  left: 0;
+  background-color: #69585f;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.right-paddle {
+  right: 0;
+  background-color: #69585f;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.hidden {
+  display: none;
+}
+
+.selected {
+  box-shadow: 0px 0px 20px 1px #333;
+}
+
+/* Workshop render */
+.renderContainer {
+  display: flex;
+}
+
+/* Controls */
+.controlButtons {
+  text-align: center;
+  margin: 5px;
+}
+
+/* Snapshot */
+.snapshotColumn {
+  padding: 5px;
+  flex: 4 0 0;
+  background-color: #f2e9e4;
+  border: 1px solid #e5e5e6;
+  border-radius: 7px;
+}
+
+/* footer */
+.renderFooter {
+  margin-top: 10px;
+}
+
+/* webcam */
+#snapshotWebcam {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 100%;
+  height: 100%;
+}
+
+/* live render */
+#snapshotRender,
+#liveRender {
+  position: relative;
+  width: 100%;
+  height: 320px;
+}
+
+/* filter render */
+#displaySnapshot,
+#displayFilter,
+#displayImportSnapshot,
+#displayLiveFilter {
+  border: 1px solid #e5e5e6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+}
+
+/* Responsive values */
+@media (max-width: 1200px) {
+  .snapshotColum {
+    flex: 3 0 0;
+  }
+
+  .galleryColumn {
+    flex: 1 0 0;
+  }
+}
+
+@media (max-width: 760px) {
+  #snapshotWebcam {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 100%;
+    height: auto;
+  }
+
+  #displaySnapshot,
+  #displayFilter,
+  #displayImportSnapshot,
+  #displayLiveFilter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  #snapshotRender,
+  #liveRender {
+    position: relative;
+    width: 420px;
+    height: 320px;
+  }
+
+  .galleryColumn {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .scrollableGallery {
+    position: relative;
+    overflow: auto;
+  }
+
+  .renderContainer {
+    display: block;
+  }
+}
+
+@media (max-width: 420px) {
+  #snapshotRender,
+  #liveRender {
+    position: relative;
+    width: 100%;
+    height: 320px;
+  }
+}
