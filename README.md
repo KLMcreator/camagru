@@ -53,6 +53,6 @@ Start MAMP or the stack you use to run your apache server, port is hardcoded so 
 
 This project won't be updated but if you want to pull something, feel free to do so.
 
-# Authors
+# Author
 
-- Clement [KLMcreator](https://github.com/KLMcreator) VANNICATTE
+- [shortcuts](https://github.com/shortcuts)
